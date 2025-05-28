@@ -33,6 +33,10 @@ namespace HDE
         int getsock();
         int getconnection();
 
+        // SETTER functions
+        void set_connection(int con);
+
+
     };
 }
 

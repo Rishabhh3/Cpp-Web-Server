@@ -21,10 +21,6 @@ HDE::SimpleSocket::SimpleSocket(int domain, int service, int protocol, int port,
     sock = socket(domain, service, protocol);
     test_connection(sock); // test socket
 
-    //ESTABLISH NETWORK CONNECTION
-    connection = connect_to_network(sock, address);
-    test_connection(connection);
-
     // BIND
     //bind is only in server side code on the
     //client side it is replaced with connect
@@ -57,4 +53,9 @@ int HDE::SimpleSocket::getsock()
 int HDE::SimpleSocket::getconnection()
 {
     return connection;
+}
+
+// Settet Functions
+void HDE::SimpleSocket::set_connection(int con){
+    connection = con;
 }
