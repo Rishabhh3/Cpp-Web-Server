@@ -30,8 +30,8 @@ namespace HDE
         void test_connection(int);
         // Getter Functions
         struct sockaddr_in get_address();
-        int getsock();
-        int getconnection();
+        int get_sock();
+        int get_connection();
 
         // SETTER functions
         void set_connection(int con);
