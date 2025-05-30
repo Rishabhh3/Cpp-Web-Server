@@ -18,7 +18,7 @@ namespace HDE
         // once initialised  sock contains the address  of a socket object on the network,
         // this should be non negative number
         int sock;
-
+        int connection;
         // this is made private because it would not be
         // good for user to manipulate it
 
@@ -34,6 +34,7 @@ namespace HDE
 
         // Functions to test sockets and Connections
         void test_connection(int);
+        void set_connection(int);
         
         // Getter Functions
         struct sockaddr_in get_address();

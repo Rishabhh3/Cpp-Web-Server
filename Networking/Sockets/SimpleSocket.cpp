@@ -50,12 +50,12 @@ int HDE::SimpleSocket::get_sock()
     return sock;
 }
 
-int HDE::SimpleSocket::get_connection()
-{
-    return connection;
-}
+// int HDE::SimpleSocket::get_connection()
+// {
+//     return connection;
+// }
 
-// Settet Functions
+// // Settet Functions
 void HDE::SimpleSocket::set_connection(int con){
     connection = con;
 }

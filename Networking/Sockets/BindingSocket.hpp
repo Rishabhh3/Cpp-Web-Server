@@ -26,6 +26,7 @@ namespace HDE
         BindingSocket(int domain, int service, int protocol, int port, u_long interface); // all the param that goes to into simple socket constructor needs to be passed to binding socket constructor first
         // this constructor is going to call const for simple socket
 
+
         /* Getters */
         int get_binding();
     };
