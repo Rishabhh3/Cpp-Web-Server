@@ -9,5 +9,16 @@ HDE::ListeningSocket::ListeningSocket(int domain, int service, int protocol, int
 
 void HDE::ListeningSocket::start_Listening()
 {
-    listening = listen(get_connection(), backlog);
+    listening = listen(get_sock(), backlog);
+}
+
+/* GETTERS*/
+int HDE::ListeningSocket::get_listening()
+{
+    return listening;
+}
+
+int HDE::ListeningSocket::get_backlog()
+{
+    return backlog;
 }

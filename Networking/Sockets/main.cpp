@@ -13,6 +13,8 @@ int main(){
     std::cout<<"ListeningSocket..."<<std::endl;
     HDE:: ListeningSocket ls = HDE::ListeningSocket(AF_INET, SOCK_STREAM,0 ,80, INADDR_ANY, 10);
     // 80 and 81 are privileged ports so to use it you have to use sudo command instead you can use port 8081 and 8080 otherwise write sudo ./test.exe
+    // it is saying failed as socket operation on non socket
+    
 
 
     std::cout<<"Success"<<std::endl;

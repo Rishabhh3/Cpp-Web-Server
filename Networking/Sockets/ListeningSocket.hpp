@@ -19,6 +19,9 @@ namespace HDE
         ListeningSocket(int domain, int service, int protocol, int port, u_long interface, int bklkg);
 
         void start_Listening();
+        
+        int get_listening();
+        int get_backlog();
     };
 }
 
